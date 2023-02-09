@@ -1,0 +1,12 @@
+<h1>task 1</h1>
+<input id="search" [formControl]="search" />
+<ul id="result">
+  <li *ngFor="let item of filteredItems">{{ item.name }}</li>
+</ul>
+
+<h1>task 2</h1>
+<div class="container" #scroll>
+  <div class="item" *ngFor="let human of listPeopleWhichIsAdded">
+    <p>{{ human }}</p>
+  </div>
+</div>
